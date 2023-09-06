@@ -15,10 +15,10 @@ In this challenge, you will
 
 Create an api route which returns all products.
 
-- Create the file structure `pages/api/products/index.js`.
-- Switch to `/api/products/index.js`; import the `getAllProducts` function from `/services/productServices.js`.
-- Write a handler function which responds
-  - with a `200` status code and
+x- Create the file structure `pages/api/products/index.js`.
+x- Switch to `/api/products/index.js`; import the `getAllProducts` function from `/services/productServices.js`.
+x - Write a handler function which responds
+x - with a `200` status code and
   - with the return value of `getAllProducts`, parsed with the `.json()` method.
 
 Check your api route:
@@ -30,11 +30,11 @@ Check your api route:
 
 Create an api route which returns a single product based on the id passed as query parameter.
 
-- Create the file `/api/products/[id].js`.
+xx- Create the file `/api/products/[id].js`.
 - Switch to `/api/products/[id].js`; import the `getProductById` function from `/services/productServices.js`.
 - Write a handler function which responds
-  - with a `200` status code and
-  - with the return value of `getProductById()`, parsed with the `.json()` method.
+ x - with a `200` status code and
+ x - with the return value of `getProductById()`, parsed with the `.json()` method.
   - To access the `id` from the url, destructure the `id` variable from `request.query` and pass `id` as argument to `getProductById(id)`.
 
 Check your api route:
@@ -47,7 +47,7 @@ You have now prepared two api routes: let's use them to display the data on two 
 
 #### All Listings Page
 
-- Create the file `/pages/products/index.js`.
+x- Create the file `/pages/products/index.js`.
 - Import the `useSWR` hook, create a fetcher and fetch `/api/products`.
 - Map over the fetched `data` object to create a list of all products where you display their information.
 - Switch to the browser and open `/products`: you should now see a (rarely styled) list of all products.
